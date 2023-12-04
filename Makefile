@@ -1,5 +1,5 @@
 # Makefile to convert .scad files to .stl using OpenSCAD
-
+# pete
 # Define the OpenSCAD command
 OPENSCAD = /Applications/OpenSCAD.app/Contents/MacOS/OpenScad
 
