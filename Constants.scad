@@ -48,8 +48,8 @@ elbowLength=30;
 
 // connect this piece to P6 using another instance of part 3
 
-outletExitHeight=21;
-outletExitWidth=310;
+outletExitHeight=30;
+outletExitWidth=240;
 outletCurveRadius=5;
 outletEntryLength=50;   // height before elbow
 outletExitLength=1;   // length after elbow
