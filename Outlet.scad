@@ -1,10 +1,10 @@
 use <Library.scad>
 include <Constants.scad>
 
-elbow(elbowWidth,elbowHeight,outletExitWidth,outletExitHeight,outletCurveRadius);
+elbow(elbowHeight,elbowWidth,outletExitWidth,outletExitHeight,outletCurveRadius);
 
 translate([0,0,-outletEntryLength]) 
- extrudedPill(elbowWidth,elbowHeight,outletEntryLength,holeSize=screwSize,holeOffset=screwOffset);
+ extrudedPill(elbowHeight,elbowWidth,outletEntryLength,holeSize=screwSize,holeOffset=screwOffset);
  
  module half(w,t1,t2) {
   rotate_extrude(angle=180) {
@@ -31,7 +31,7 @@ module bump(w,l){
 color("red") 
  translate([
   outletExitWidth/2,
-  outletCurveRadius+elbowHeight/2,
+  outletCurveRadius+elbowWidth/2,
   outletExitHeight/2+outletCurveRadius])
   rotate([0,90,90])
    bump(outletExitHeight,outletExitWidth);
