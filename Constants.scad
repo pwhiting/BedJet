@@ -26,12 +26,14 @@ circleToPillExitWidth=50;      // transition to an pill with minor dimmenson of 
 circleToPillExitHeight=130;     // transition to an pill with major dimmension of 150
             // area of new pill = w2*circleToPillExitLength-((w2/2)^2*(1-PI/4))
             
-            
+
 // third section (make 2)        
 
-pipeLength=180;
-pipeHeight=circleToPillExitWidth+4.3;
-pipeWidth=circleToPillExitHeight+4.3;
+SidePipeLength=180;
+pipeLength=100;
+upPipeLength=100;
+pipeHeight=circleToPillExitWidth+fit;
+pipeWidth=circleToPillExitHeight+fit;
 
 // connector for two third sections (4th section)
 
@@ -48,10 +50,15 @@ elbowLength=30;
 
 // connect this piece to P6 using another instance of part 3
 
-outletExitHeight=30;
-outletExitWidth=240;
-outletCurveRadius=5;
-outletEntryLength=50;   // height before elbow
+
+outletHeight=35;
+outletWidth=200;
+outletCurveRadius=15;
+outletEntryLength=screwOffset*2;   // height before elbow
 outletExitLength=1;   // length after elbow
 extrudedPillHeight=5;   // extrudedPill height
 
+upPipeEntryWidth=elbowHeight+fit;
+upPipeEntryHeight=elbowWidth+fit;
+upPipeExitWidth=outletWidth+fit;
+upPipeExitHeight=outletHeight+fit;

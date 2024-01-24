@@ -32,7 +32,7 @@ color("red") translate([inletDiameter/2+inletCurveRadius,0,etch-inletEntryLength
 translate([0,0,inletCurveRadius+inletDiameter/2]) 
  difference() {
   rotate([0,-90,0]) extrudedPill(inletDiameter,inletExitLength);
-  translate([screwEdgeOffset-inletExitLength,0,0]) cylinder(100,screwDiameter);
+  translate([screwOffset-inletExitLength,0,0]) cylinder(100,screwSize);
 }
 
 rotate([90,0,0]) {

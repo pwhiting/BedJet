@@ -10,6 +10,5 @@ extendedElbow(circleToPillEntryDiameter,circleToPillEntryDiameter,circleToPillEx
     entry=circleToPillEntryLength,
     exit=circleToPillEntryLength,
     holeSize=screwSize,
-    holeOffset=screwOffset,
-    reflectHoles=1
+holeOffset=screwOffset
 );
